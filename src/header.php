@@ -9,6 +9,9 @@
     <title>BookIt</title>
 </head>
 <body>
+    <!-- <?php
+            session_start();
+        ?> -->
     <header>
         <div class="header centered">
             <a href="index.php" id="logo_link"><img class="logo" src="..\icons\inverted\BookIt0.svg" alt="BookIt logo" id="header_logo" /></a>
@@ -17,8 +20,7 @@
                     <li><a href="about_us.php">About us</a></li>
                     <li><a href="">Explore</a></li>
                     <li><a href="">My Events</a></li>
-                    <?php
-                    session_start();
+                    <?
 
                     if (empty($_SESSION['name'])) {
                         echo "<li><a href=\"Form.php\">Sign up</a></li>";
