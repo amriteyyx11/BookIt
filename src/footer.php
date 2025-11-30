@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-
-    <title>BookIt</title>
-</head>
 
 <body>
-
     <footer>
         <div class="centered footer">
             <img class="logo footer_logo" src="..\icons\inverted\BookIt0.svg" alt="BookIt logo" />
@@ -22,7 +9,6 @@
                     <li><a href="">Terms and Conditions</a></li>
                     <li><a href="">Refund Policy</a></li>
                     <li><a href="">FAQs</a></li>
-                    <li></li>
                 </ul>
             </div>
             <div id="contact_us">

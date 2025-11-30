@@ -15,16 +15,16 @@ Usage examples (HTML):
 
 :root{
   --grid-gap: 1rem;
-  --min-col: 220px; /* min column size */
+  --min-col: 400px; /* min column size */
 }
 
 /* Grid container */
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--min-col), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-col), 2fr));
   gap: var(--grid-gap);
   align-items: start; /* keep items top-aligned */
-  padding: 0;
+  padding: 1.8rem 1.8rem;
   margin: 0;
 }
 
@@ -36,7 +36,7 @@ Usage examples (HTML):
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  
 }
 
 /* Option A: consistent responsive heights using aspect-ratio */
@@ -78,4 +78,8 @@ Usage examples (HTML):
   display: block;
   border-radius: 6px;
   object-fit: cover;
+}
+
+article img{
+  aspect-ratio: 1/1;
 }

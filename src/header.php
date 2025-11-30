@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
     <title>BookIt</title>
 </head>
 <body>
@@ -19,7 +17,16 @@
                     <li><a href="about_us.php">About us</a></li>
                     <li><a href="">Explore</a></li>
                     <li><a href="">My Events</a></li>
-                    <li><a href="Form.php">Sign up</a></li>
+                    <?php
+                    session_start();
+
+                    if (empty($_SESSION['name'])) {
+                        echo "<li><a href=\"Form.php\">Sign up</a></li>";
+                    } else {
+                        echo "<li><a href=\"logout.php\" onclick=\"return confirm('Are you sure you want to log out?')\">Log out</a></li>";
+                    }
+                    
+                    ?>
                     <li><a href=""><img src="..\icons\inverted\Profile0.svg" alt="Profile" class="icon"></a></li>
                 </ul>
             </nav>

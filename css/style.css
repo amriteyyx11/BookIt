@@ -1,6 +1,6 @@
 html body{
     font-family: 'Tahoma' , sans-serif;
-    outline: 1px solid red; 
+    /* outline: 1px solid red;  */
     height: auto;
     margin: auto;
     background-color: black;
@@ -63,7 +63,7 @@ main{
     height: auto;
     aspect-ratio: 7/2;
     height: fit-content;
-    /* background-image:linear-gradient(180deg,rgba(0,0,0,0.7)100%, rgba(255,255,255,.2)), url('../Images/Albatross.jpg'); */
+    background-image:linear-gradient(180deg,rgba(0,0,0,0.7)100%, rgba(255,255,255,.2));
     transition: background 0.5s ease-in-out;
     display: flex;
     background-position: 40% 40%;
@@ -112,14 +112,14 @@ main{
     padding: min(1.8rem,5vw);
 }
 .main_content{
-   height: 900px;
-   background-color: white;
+   height: fit-content;
+   background-color: black;
+   color:black;
 }
 .footer {
     display: block;
     padding: 0;
     height: auto;
-    display: flex;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -166,6 +166,9 @@ div>h3{
    
 }
 @media (max-width: 660px){
+    .hero{
+        aspect-ratio: 16/9;
+    }
     .footer{
         transition: all 0.3s ease-in-out;
         display: flex;
@@ -177,5 +180,9 @@ div>h3{
     }
     .centered{
         max-width: 90vw;
+    }
+}@media(max-width: 768px)and (min-width: 661px){
+    .hero{
+        aspect-ratio: 5/2;
     }
 }

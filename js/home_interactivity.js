@@ -7,22 +7,22 @@ const images = [
     "../Images/monkeyTemple.jpg",
     "../Images/sabinrai.jpg",
     "../Images/rockhead.jpg",
-    "../Images/Albatross.jpg"
+    "../Images/Albatross.jpg","../Images/Hero_Image_Temp3.jpg"
 ];
 
 let index = 0;
 
-// Set initial background
+
 hero.style.backgroundImage = `url("${images[index]}")`;
 
 // RIGHT BUTTON – Next image
 document.getElementById('right').addEventListener("click", () => {
-    index = (index + 1) % images.length; // loops back to first image
+    index = (index + 1) % images.length; 
     hero.style.backgroundImage = `url("${images[index]}")`;
 });
 
 // LEFT BUTTON – Previous image
 document.getElementById('left').addEventListener("click", () => {
-    index = (index - 1 + images.length) % images.length; // loops back to last image
+    index = (index - 1 + images.length) % images.length; 
     hero.style.backgroundImage = `url("${images[index]}")`;
 });
